@@ -1,0 +1,6 @@
+from djan
+
+
+urlspattern = [
+    path()
+]

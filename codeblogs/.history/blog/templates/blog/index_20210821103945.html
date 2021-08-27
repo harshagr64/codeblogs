@@ -1,0 +1,51 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block title %}CodeBlogs{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/index.css" %}">
+{% endblock css_files %}
+
+
+
+{% block content %}
+    <header id="main-navigation">
+        <a href = "">CodeBlogs</a>
+        
+        <nav>
+            <a href = "">All Posts</a>
+        </nav>
+    </header>
+
+    <section id = "welcome">
+        <header>
+            <img src = "{% static 'blog/images/man.png' %}" alt = "CodeBlogs">
+            <h2>HARSH's BLOG</h2>
+        </header>
+        <p>Hi, I am Harsh Agarwal and I love to blog about tech and the world!</p>
+    </section>
+    <section id="latest-posts">
+        <h2> My Latest Thoughts</h2>
+        <ul>
+            <li>
+                <article class="post">
+                    <a href="">
+                        <img src="{% static 'b' %}" alt="Mountain Hiking">
+                        <div class="post__content">
+                            <h3>Mountain Hiking</h3>
+                            <p> There is nothing like the views when hiking mountains</p>
+                        </div>
+                    </a>
+                </article>
+            </li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>What I Do</h2>
+        <p> I love programming, I love to help others and I enjoy exploring new tech</p>
+        <p>My goal is to keep on growing as a developer</p>
+    </section>
+{% endblock %}
+
+
