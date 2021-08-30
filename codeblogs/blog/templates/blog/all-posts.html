@@ -12,15 +12,12 @@
 
 
 {% block content %}
-    <section id="all-posts">
+    <section id="all_posts">
         <h2>My Posts</h2>
         <ul>
+        {% for post in all_posts %}
             {% include "blog/includes/post.html" %}
-            {% include "blog/includes/post.html" %}
-            {% include "blog/includes/post.html" %}
-            {% include "blog/includes/post.html" %}
-            {% include "blog/includes/post.html" %}
-            {% include "blog/includes/post.html" %}
+        {% endfor %}
         </ul>
     </section>
 
